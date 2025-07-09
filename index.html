@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Pesan Anonim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kirim Pesan Anonim ke Saya</h1>
+        <p>Ketik pesan rahasiamu di bawah ini. Jangan khawatir, identitasmu akan aman.</p>
+
+        <form id="anonymousMessageForm">
+            <textarea id="messageInput" placeholder="Tulis pesanmu di sini..." rows="8" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <div id="statusMessage" class="status-message"></div>
+
+        <p class="share-link-text">Bagikan link ini ke teman-temanmu:</p>
+        <div class="share-link-container">
+            <input type="text" id="currentLink" value="" readonly>
+            <button onclick="copyLink()">Salin Link</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
